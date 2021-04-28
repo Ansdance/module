@@ -6,7 +6,7 @@
 	<modules>
 		<module>api</module>
 		<module>super-module</module>
-		<module>impl</module>
+<!--		<module>impl</module>-->
 	</modules>
 <!--	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -74,39 +74,39 @@
 	</dependencyManagement>
 
 
-<!--	<profiles>-->
-<!--		<profile>-->
-<!--			<id>dev</id>-->
-<!--			<modules>-->
-<!--				<module>impl</module>-->
-<!--			</modules>-->
-<!--			<activation>-->
-<!--				<activeByDefault>true</activeByDefault>-->
-<!--			</activation>-->
-<!--			<build>-->
-<!--				<resources>-->
-<!--					<resource>-->
-<!--						<directory>src/main/resources/dev</directory>-->
-<!--					</resource>-->
-<!--				</resources>-->
-<!--			</build>-->
-<!--		</profile>-->
-<!--		<profile>-->
-<!--			<id>staging</id>-->
-<!--			&lt;!&ndash;		<modules>&ndash;&gt;-->
-<!--			&lt;!&ndash;			<module></module>&ndash;&gt;-->
-<!--			&lt;!&ndash;		</modules>&ndash;&gt;-->
-<!--			<activation>-->
-<!--				<activeByDefault>false</activeByDefault>-->
-<!--			</activation>-->
-<!--			<build>-->
-<!--				<resources>-->
-<!--					<resource>-->
-<!--						<directory>src/main/resources/staging</directory>-->
-<!--					</resource>-->
-<!--				</resources>-->
-<!--			</build>-->
-<!--		</profile>-->
-<!--	</profiles>-->
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<modules>
+				<module>impl</module>
+			</modules>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/dev</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+		<profile>
+			<id>staging</id>
+			<!--		<modules>-->
+			<!--			<module></module>-->
+			<!--		</modules>-->
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/staging</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
